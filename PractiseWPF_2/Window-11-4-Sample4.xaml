@@ -1,0 +1,26 @@
+﻿<Window x:Class="PractiseWPF_2.Window_11_4_Sample4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PractiseWPF_2"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Window_11_4_Sample4" Height="300" Width="300">
+    <Window.Resources>
+        <!--数据源-->
+        <XmlDataProvider x:Key="ds" Source="pack://application:,,,/Resources/XMLs/Data2.xml" XPath="Data/Operation"/>
+        <!--<XmlDataProvider x:Key="ds" Source="E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\PractiseWPF_2/Data2.xml" XPath="Data/Operation"/>-->
+        <!--operation模板-->
+        <HierarchicalDataTemplate DataType="Operation" ItemsSource="{Binding XPath=Operation}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding XPath=@Name}" Margin="10,0"/>
+                <TextBlock Text="{Binding XPath=@Gesture}" />
+            </StackPanel>
+        </HierarchicalDataTemplate>
+    </Window.Resources>
+    <StackPanel>
+        <Menu ItemsSource="{Binding Source={StaticResource ds}}" Height="200" Width="200" Margin="5"/>
+        <Button Content="test" Click="Button_Click"></Button>
+    </StackPanel>
+</Window>

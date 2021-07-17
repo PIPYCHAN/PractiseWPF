@@ -1,0 +1,11 @@
+﻿<Application x:Class="PractiseWPF_2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:PractiseWPF_2"
+    StartupUri="Window-11-3to11-4.xaml">
+    <!--StartupUri="Window-11-4-Sample5.xaml">-->
+             
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

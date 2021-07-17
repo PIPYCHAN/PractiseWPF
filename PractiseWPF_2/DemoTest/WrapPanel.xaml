@@ -1,0 +1,18 @@
+﻿<Window x:Class="PractiseWPF_2.WrapPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WrapPanel" Height="300" Width="300">
+    <WrapPanel Margin="0,0,-59,0">
+        <Button Width="50" Height="50" Content="OK"/>
+        <Button Width="50" Height="50" Content="OK"/>
+        <Button Width="50" Height="50" Content="OK"/>
+        <Button Width="50" Height="50" Content="OK"/>
+        <Button Width="50" Height="50" Content="OK"/>
+        <Button Width="50" Height="50" Content="OK"/>
+        <Button Width="50" Height="50" Content="OK"/>
+        <Button Width="50" Height="50" Content="OK"/>
+        <Button Width="50" Height="50" Content="OK"/>
+        <Button Width="50" Height="50" Content="OK"/>
+        <Button Width="50" Height="50" Content="OK"/>
+    </WrapPanel>
+</Window>

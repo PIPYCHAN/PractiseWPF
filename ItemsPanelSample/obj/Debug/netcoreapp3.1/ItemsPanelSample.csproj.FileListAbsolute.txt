@@ -1,0 +1,13 @@
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\bin\Debug\netcoreapp3.1\ItemsPanelSample.deps.json
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\bin\Debug\netcoreapp3.1\ItemsPanelSample.dll
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\bin\Debug\netcoreapp3.1\ItemsPanelSample.pdb
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\obj\Debug\netcoreapp3.1\MyUserControl.g.cs
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\obj\Debug\netcoreapp3.1\ItemsPanelSample_MarkupCompile.cache
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\obj\Debug\netcoreapp3.1\ItemsPanelSample_MarkupCompile.lref
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\obj\Debug\netcoreapp3.1\MyUserControl.baml
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\obj\Debug\netcoreapp3.1\ItemsPanelSample.g.resources
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\obj\Debug\netcoreapp3.1\ItemsPanelSample.AssemblyInfoInputs.cache
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\obj\Debug\netcoreapp3.1\ItemsPanelSample.AssemblyInfo.cs
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\obj\Debug\netcoreapp3.1\ItemsPanelSample.csproj.CoreCompileInputs.cache
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\obj\Debug\netcoreapp3.1\ItemsPanelSample.dll
+E:\VisualStudio_Repo\PractiseWPF\PractiseWPF_2_NetFramework\PractiseWPF_2\ItemsPanelSample\obj\Debug\netcoreapp3.1\ItemsPanelSample.pdb

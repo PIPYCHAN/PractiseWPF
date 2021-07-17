@@ -1,0 +1,6 @@
+Catagory=Bomber,Name=B1,State=Unknown
+Catagory=Bomber,Name=B2,State=Unknown
+Catagory=Fighter,Name=F22,State=Available
+Catagory=Fighter,Name=SI-47,State=Unknown
+Catagory=Bomber,Name=B52,State=Unknown
+Catagory=Fighter,Name=J10,State=Unknown

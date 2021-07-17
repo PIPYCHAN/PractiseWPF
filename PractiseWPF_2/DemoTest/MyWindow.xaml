@@ -1,0 +1,12 @@
+﻿<Window x:Class="PractiseWPF_2.MyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MyWindow" Height="300" Width="300">
+    <StackPanel Background="LightBlue">
+        <TextBox Margin="5"/>
+        <TextBox Margin="5"/>
+        <TextBox Margin="5"/>
+        <Button Content="OK" Margin="5"/>
+        
+    </StackPanel>
+</Window>

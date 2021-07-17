@@ -1,0 +1,19 @@
+﻿<Window x:Class="PractiseWPF_2.Window_6_5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PractiseWPF_2"
+        mc:Ignorable="d"
+        Title="Window_6.5_MultiBinding_多路Binding" Height="185" Width="400">
+    <StackPanel Background="LightGray">
+
+        <TextBox x:Name="txtBox1" Height="23" Margin="5"/>
+        <TextBox x:Name="txtBox2" Height="23" Margin="5,0"/>
+        <TextBox x:Name="txtBox3" Height="23" Margin="5"/>
+        <TextBox x:Name="txtBox4" Height="23" Margin="5,0"/>
+        <Button x:Name="btn_Submit" Content="Submit" Width="80" Margin="5"/>
+    </StackPanel>
+        
+
+</Window>

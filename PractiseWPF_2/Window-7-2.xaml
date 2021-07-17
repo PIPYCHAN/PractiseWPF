@@ -1,0 +1,15 @@
+﻿<Window x:Class="PractiseWPF_2.Window_7_2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PractiseWPF_2"
+        mc:Ignorable="d"
+        Title="Window_7_2_依赖属性" Height="200" Width="260">
+    <StackPanel>
+        <TextBox x:Name="txtBox1" BorderBrush="Black" Margin="5"/>
+        <TextBox x:Name="txtBox2" BorderBrush="Black" Margin="5"/>
+        <Button x:Name="btn_Ok" Content="ok" Margin="5" Click="btn_Ok_Click" />
+        <Button x:Name="btn_Ok2" Content="testDependency" Margin="5" Click="btn_Ok2_Click" />
+    </StackPanel>
+</Window>

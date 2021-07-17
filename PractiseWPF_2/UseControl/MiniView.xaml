@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="PractiseWPF_2.MiniView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PractiseWPF_2"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border CornerRadius="5" BorderBrush="LawnGreen" BorderThickness="2">
+        <StackPanel>
+            <TextBox x:Name="txtBox1" Margin="5"/>
+            <TextBox x:Name="txtBox2" Margin="5,0"/>
+            <TextBox x:Name="txtBox3" Margin="5"/>
+            <TextBox x:Name="txtBox4" Margin="5,0"/>
+        </StackPanel>
+    </Border>
+</UserControl>

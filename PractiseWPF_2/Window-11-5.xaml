@@ -1,0 +1,160 @@
+﻿<Window x:Class="PractiseWPF_2.Window_11_5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PractiseWPF_2"
+        mc:Ignorable="d"
+        Title="Window_11_5" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <!--<Style.Setters>-->
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="TextDecorations" Value="Underline"/>
+                <Setter Property="FontStyle" Value="Italic"/>
+            <!--</Style.Setters>-->
+        </Style>
+
+       <!--<Style TargetType="CheckBox">
+            <Style.Triggers>
+                <Trigger Property="IsChecked" Value="True">
+                    --><!--<Trigger.Setters>--><!--
+                        <Setter Property="FontSize" Value="20"/>
+                        <Setter Property="Foreground" Value="Orange"/>
+                    --><!--</Trigger.Setters>--><!--
+                </Trigger>
+            </Style.Triggers> 
+        </Style>-->
+
+        <Style TargetType="CheckBox" >
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsChecked" Value="true"/>
+                        <Condition Property="Content" Value="轻轻地我走了"/>
+                    </MultiTrigger.Conditions>
+                    <MultiTrigger.Setters>
+                        <Setter Property="FontSize" Value="30"/>
+                        <Setter Property="Foreground" Value="Red"/>
+                    </MultiTrigger.Setters>
+                </MultiTrigger>
+            </Style.Triggers>
+        </Style>
+        <local:L2BConverter x:Key="cvtr"/>
+        <Style TargetType="TextBox">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding RelativeSource={x:Static RelativeSource.Self},Path=Text.Length,Converter={StaticResource  cvtr}}" Value="false">
+                    <Setter Property="BorderBrush" Value="Red"/>
+                    <Setter Property="BorderThickness" Value="1"/>
+                </DataTrigger>
+                
+            </Style.Triggers>
+        </Style>
+
+        
+        <Style TargetType="ListBoxItem">
+            <!--使用style设置datatemplate-->
+            <Setter Property="ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Id}" Width="60"/>
+                            <TextBlock Text="{Binding Name}" Width="120"/>
+                            <TextBlock Text="{Binding Age}" Width="60"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+            
+            <Style.Triggers>
+                <MultiDataTrigger>
+                    <MultiDataTrigger.Conditions>
+                        <Condition Binding="{Binding Path=Id}" Value="2"/>
+                        <Condition Binding="{Binding Path=Name}" Value="Tom"/>
+                    </MultiDataTrigger.Conditions>
+                    <MultiDataTrigger.Setters>
+                        <Setter Property="Background"  Value="Orange"/>
+                    </MultiDataTrigger.Setters>
+                </MultiDataTrigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style TargetType="Button">
+            <Style.Triggers>
+                <!--鼠标进入-->
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation To="120" Duration="0:0:0.2" Storyboard.TargetProperty="Width"/>
+                            <DoubleAnimation To="120" Duration="0:0:0.2" Storyboard.TargetProperty="Height"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+                <!--鼠标离开-->
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetProperty="Width"/>
+                            <DoubleAnimation   Duration="0:0:0.2" Storyboard.TargetProperty="Height"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="sample1-setter">
+            <StackPanel Margin="5">
+                <TextBlock Text="Hello WPF"/>
+                <TextBlock Text="This is a sample"/>
+                <TextBlock Text="by me 2021" Style="{x:Null}"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="sample2-Trigger" Grid.Row="1">
+            <StackPanel >
+                <CheckBox Content="轻轻地我走了" Margin="5"/>
+                <CheckBox Content="正如我轻轻地来" Margin="5"/>
+                <CheckBox Content="我挥一挥衣袖" Margin="5"/>
+                <CheckBox Content="不带走一片云彩" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="sample3-MultiTrigger" Grid.Row="2">
+            <StackPanel >
+                <CheckBox Content="轻轻地我走了" Margin="5"/>
+                <CheckBox Content="正如我轻轻地来" Margin="5"/>
+                <CheckBox Content="我挥一挥衣袖" Margin="5"/>
+                <CheckBox Content="不带走一片云彩" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="sample4-由数据出发的Trigger" Grid.Column="1">
+            <StackPanel>
+                <TextBox Margin="5"/>
+                <TextBox Margin="5"/>
+                <TextBox Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="sample5-MultiDataTrigger" Grid.Row="1" Grid.Column="1">
+            <ListBox x:Name="listBoxStudent" Margin="5"/>
+        </GroupBox>
+
+        <GroupBox Header="sample6-事件触发的Trigger" Grid.Row="2" Grid.Column="1">
+
+            <Canvas>
+                <Button Width="140" Height="40" Content="OK"/>
+            </Canvas>
+        </GroupBox>
+    </Grid>
+</Window>
